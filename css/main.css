@@ -34,20 +34,26 @@ h1 {
   background-color: #fff;
   color: #145b1d;
   background-image: url("../images/leaf-icon.svg");
+  background-size: 64px;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .banner {
-  background-image: url("../images/banner.jpg");
+  background-image: linear-gradient(to bottom, rgba(16, 52, 41, 0) 50%, rgba(16, 52, 41, .8)), url("../images/banner.jpg");
   background-size: cover;
   background-repeat: no-repeat;
+  border-bottom: 3px solid #2d5a4d;
+  background-position: center;
 }
 
 .banner-content {
   color: #fff;
   background-image: url("../images/two-leaves.svg");
   background-repeat: no-repeat;
-  background-position: top;
-
+  background-position: .8em 11.2em;
+  background-size: 100px;
+  padding-top: 300px;
 }
 
 @media only screen and (min-width: 60em) {
@@ -58,6 +64,14 @@ h1 {
 
   .nav {
     text-align: right;
+  }
+
+  .banner-content {
+    background-position: .8em 10em;
+  }
+
+  .banner {
+    background-position: bottom center;
   }
 
 }
